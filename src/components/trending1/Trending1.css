@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+}
+
+
+.card-container1{
+    display: flex;
+    flex-wrap: wrap;
+    padding:0px 0px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.card1{
+    flex:22%;
+    max-width: 25%;
+    margin: 10px;
+    background-color: white;
+    border-radius: 15px;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+.card1:hover{
+  background-color: pink;
+  cursor: pointer;
+}
+
+h5{
+    font-size: larger;
+}
+
+.cont-title{
+    background-color: orangered;
+    color:white;
+    padding:4px 8px;
+    border-radius: 8px;
+}
+
+.trend-image{
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 80%;
+}
+
+.btn-buy{
+    background-color: rgb(73, 197, 247);
+    border:1px rgb(73, 197, 247);
+    border-radius: 10px;
+    height:30px;
+    font-weight: bold;
+    color:rgb(90, 88, 88);
+}
+.btn-buy:hover{
+    cursor: pointer;
+}
+
+.heart{
+    margin-left: 8px;
+}
+.btn-and-heart{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width:800px){
+    .card1{
+        flex:30%;
+        max-width: 33%;
+        vertical-align: middle;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:600px){
+    .card1{
+        flex:44%;
+        max-width: 50%;
+        vertical-align: middle;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:330px){
+    .card1{
+        flex:50%;
+        max-width: 50%;
+        flex-wrap: wrap;
+        vertical-align: middle;
+        justify-content: center;
+    }
+   
+}

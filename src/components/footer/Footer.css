@@ -1,0 +1,33 @@
+.footer-container{
+    background-image: linear-gradient(to bottom right, rgb(174, 216, 240), rgb(245, 157, 226));
+    padding-top: 1rem;
+}
+.footer{
+    display:flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    margin: 10px;
+}
+
+.list{
+    padding-bottom: 0.5rem;
+    text-align: left;
+    margin-left: -2rem;
+}
+
+.footer-headings{
+    color:blue;
+}
+ul{
+    list-style-type: none;
+    
+}
+hr{
+    color: black;
+}
+.contact-us{
+    margin-left: 2rem;
+}
+.contact-icons{
+    padding-left: 2rem;
+}

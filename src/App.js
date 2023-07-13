@@ -1,27 +1,33 @@
 import './App.css';
+import Sidebar from './components/menu/Sidebar';
+import Trending from './components/trending/Trending';
+import Categories from './components/categories/Categories';
+import Testimonial from './components/testimonials/Testimonial';
+import Footer from './components/footer/Footer';
+import Banner from './components/banner/Banner';
+import Trending1 from './components/trending1/Trending1';
+
+import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
+ 
+      <Router>
+      <Sidebar />
+      <Routes>
+  
+        <Route path='/trending' exact Component={Trending1}/>
+        <Route path='/categories' exact Component={Categories}/>
+      </Routes>
+      </Router>
+     <Banner />
+     <Trending/>
+     <Categories />
+     <Testimonial />
+     <Footer />
+    
     </div>
   );
 }
